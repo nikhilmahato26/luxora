@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Luxora Holidays — global styles
+   ============================================================ */
+
+@layer base {
+  :root {
+    --canvas: #f8fafc;
+    --primary: #14532d;
+    --gold: #d4af37;
+    --emerald: #10b981;
+    --glass: rgba(255, 255, 255, 0.75);
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* offset anchored sections below the fixed navbar */
+    scroll-padding-top: 96px;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    letter-spacing: -0.01em;
+  }
+
+  /* Brand scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #eef2f0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1a6b3c, #14532d);
+    border-radius: 999px;
+  }
+  ::selection {
+    background: rgba(212, 175, 55, 0.3);
+    color: #0a2e19;
+  }
+}
+
+@layer components {
+  /* Glass surface ---------------------------------------------------- */
+  .glass {
+    background: var(--glass);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(22px) saturate(150%);
+    -webkit-backdrop-filter: blur(22px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+  }
+
+  .glass-dark {
+    background: rgba(10, 46, 25, 0.45);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  /* Section padding rhythm ------------------------------------------ */
+  .section {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  /* Gold gradient text ---------------------------------------------- */
+  .text-gold-gradient {
+    background: linear-gradient(120deg, #b8932b 0%, #d4af37 40%, #e7ca6b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Hairline gold divider ------------------------------------------- */
+  .gold-rule {
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(212, 175, 55, 0.9),
+      transparent
+    );
+  }
+
+  /* Shimmering gold button surface ---------------------------------- */
+  .btn-shimmer {
+    background-size: 200% 100%;
+    background-image: linear-gradient(
+      110deg,
+      #d4af37 0%,
+      #e7ca6b 25%,
+      #d4af37 50%,
+      #b8932b 100%
+    );
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  }
+}
