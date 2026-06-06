@@ -17,9 +17,10 @@ export default function Home() {
       <Hero />
       <Fleet />
       <RentalPackages />
+      <TourPackages />
       <Services />
       <Destinations />
-      <TourPackages />
+      
       <WhyChooseUs />
       <BookingProcess />
       <Testimonials />
