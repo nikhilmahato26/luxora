@@ -37,7 +37,12 @@ export function vehicleEnquiry(vehicleName) {
   return `Hi Luxora Holidays! I'd like to book the ${vehicleName}. Could you share availability and details?`;
 }
 
-/** Prebuilt WhatsApp message for a destination package */
+/** Prebuilt WhatsApp message for a destination card */
 export function packageEnquiry(destination) {
-  return `Hi Luxora Holidays! I'm interested in a Kerala tour package for ${destination}. Please share details.`;
+  return `Hi Luxora Holidays! I'm interested in a tour package for ${destination}. Please share details.`;
+}
+
+/** Prebuilt WhatsApp message for a named tour package */
+export function tourPackageEnquiry(packageName) {
+  return `Hi Luxora Holidays! I'm interested in the "${packageName}" package. Please share availability and pricing.`;
 }

@@ -34,6 +34,7 @@ export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Fleet', href: '#fleet' },
   { label: 'Packages', href: '#packages' },
+  { label: 'Tour Packages', href: '#tour-packages' },
   { label: 'Destinations', href: '#destinations' },
   { label: 'Services', href: '#services' },
   { label: 'Contact', href: '#contact' },
@@ -41,17 +42,17 @@ export const navLinks = [
 
 // ── Hero -------------------------------------------------------------------
 export const hero = {
-  eyebrow: 'Cochin Airport · Kerala',
-  titleLine1: 'Explore Kerala With',
+  eyebrow: 'Cochin Airport · India Tours',
+  titleLine1: 'Explore India With',
   titleLine2: 'Luxora Holidays',
   subtitle:
-    'Premium Cab Rentals • Kerala Tour Packages • Airport Transfers • Family Trips',
+    'Premium Cab Rentals • India Tour Packages • Airport Transfers • Family Trips',
   background:
     'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=2400&auto=format&fit=crop',
   trustBadges: [
     'Premium Fleet',
     'Airport Pickup & Drop',
-    'Kerala Tour Experts',
+    'India Tour Experts',
     '24/7 Support',
   ],
   stats: [
@@ -141,7 +142,7 @@ export const services = [
     icon: 'Camera',
     title: 'Sightseeing Packages',
     description:
-      'Curated day tours and multi-day itineraries across Kerala’s most beautiful destinations.',
+      "Curated day tours and multi-day itineraries across India’s most beautiful destinations.",
   },
   {
     id: 'tourist-vehicles',
@@ -266,7 +267,7 @@ export const whyChooseUs = [
   { icon: 'IndianRupee', title: 'Affordable Pricing', text: 'Transparent, all-inclusive fares with no hidden charges.' },
   { icon: 'Heart', title: 'Family Friendly', text: 'Spacious, safe rides perfect for travelling with family.' },
   { icon: 'Briefcase', title: 'Corporate Travel', text: 'Dependable executive transport with priority support.' },
-  { icon: 'MapPin', title: 'Kerala Experts', text: 'Local specialists crafting the perfect Kerala itinerary.' },
+  { icon: 'MapPin', title: 'Travel Experts', text: "Specialists in crafting perfect itineraries across India's top destinations." },
 ];
 
 // ── Booking process --------------------------------------------------------
@@ -274,7 +275,7 @@ export const bookingProcess = [
   { step: '01', icon: 'CarFront', title: 'Choose Vehicle', text: 'Pick the cab or tour package that fits your journey.' },
   { step: '02', icon: 'PhoneCall', title: 'Contact Us', text: 'Reach out on call or WhatsApp for instant availability.' },
   { step: '03', icon: 'CalendarCheck', title: 'Confirm Booking', text: 'Lock in your date, route and fare — quick and clear.' },
-  { step: '04', icon: 'PartyPopper', title: 'Enjoy Journey', text: 'Sit back, relax and explore Kerala in comfort.' },
+  { step: '04', icon: 'PartyPopper', title: 'Enjoy Journey', text: 'Sit back, relax and explore India in comfort.' },
 ];
 
 // ── Testimonials -----------------------------------------------------------
@@ -339,20 +340,276 @@ export const faqs = [
     a: 'Absolutely. All our chauffeurs are verified, courteous and know Kerala’s routes, viewpoints and timings intimately.',
   },
   {
-    q: 'Can you plan a full multi-day Kerala itinerary?',
-    a: 'Yes — from Munnar and Alleppey to Wayanad and Kovalam, we craft complete itineraries with transport, timing and sightseeing handled end-to-end.',
+    q: 'Can you plan a full multi-day tour itinerary?',
+    a: "Yes — from Kerala's Munnar and Alleppey to Ooty, Agra and Hyderabad, we craft complete itineraries across India with transport, timing and sightseeing handled end-to-end.",
+  },
+];
+
+// ── Tour Packages ----------------------------------------------------------
+export const tourPackages = [
+  {
+    id: 'munnar-escape',
+    name: 'Munnar Hill Station Escape',
+    duration: '2N / 3D',
+    region: 'Kerala',
+    tag: 'Hill Station',
+    image: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Cheeyappara & Valara Waterfalls',
+      'Tea Museum, Mattupetty Dam & Echo Point',
+      'Eravikulam National Park — Nilgiri Tahr',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: '2 Star', total: 10500 },
+      { label: 'Deluxe', sublabel: '3 Star', total: 16500 },
+      { label: 'Premium', sublabel: '4/5 Star', total: 27000 },
+    ],
+  },
+  {
+    id: 'honeymoon-family',
+    name: 'Honeymoon & Family Special',
+    duration: '3N / 4D',
+    region: 'Kerala',
+    tag: 'Honeymoon',
+    image: 'https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Scenic Munnar tea garden walks',
+      'Luxury Alleppey Houseboat night stay',
+      'Authentic Kerala meals on board',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 20000 },
+      { label: 'Deluxe', sublabel: null, total: 30000 },
+      { label: 'Premium', sublabel: null, total: 48000 },
+    ],
+  },
+  {
+    id: 'complete-kerala',
+    name: 'Complete Kerala Experience',
+    duration: '4N / 5D',
+    region: 'Kerala',
+    tag: 'Complete Tour',
+    image: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Periyar Wildlife Sanctuary & boating',
+      'Spice Plantation tour in Thekkady',
+      'Alleppey backwaters & houseboat',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 24000 },
+      { label: 'Deluxe', sublabel: null, total: 36000 },
+      { label: 'Premium', sublabel: null, total: 57500 },
+    ],
+  },
+  {
+    id: 'cochin-city-tour',
+    name: 'Cochin One Day City Tour',
+    duration: '1 Day',
+    region: 'Kerala',
+    tag: 'City Tour',
+    image: 'https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Chinese Fishing Nets & Santa Cruz Basilica',
+      'Mattancherry Dutch Palace & Jewish Synagogue',
+      'Marine Drive & Lulu Mall',
+    ],
+    pricing: [
+      { label: 'Sedan', sublabel: null, total: 3000 },
+      { label: 'SUV', sublabel: null, total: 4500 },
+      { label: 'Tempo', sublabel: null, total: 7000 },
+    ],
+  },
+  {
+    id: 'vagamon-athirappilly',
+    name: 'Vagamon & Athirappilly',
+    duration: '2N / 3D',
+    region: 'Kerala',
+    tag: 'Waterfalls',
+    image: 'https://images.unsplash.com/photo-1623431924446-7a2bb1f6a86b?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Athirappilly & Vazhachal Waterfalls',
+      'Vagamon Meadows & Pine Forest',
+      "India's Longest Glass Bridge",
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 12000 },
+      { label: 'Deluxe', sublabel: null, total: 18000 },
+      { label: 'Premium', sublabel: null, total: 28500 },
+    ],
+  },
+  {
+    id: 'ramakkalmedu-thekkady',
+    name: 'Ramakkalmedu & Thekkady',
+    duration: '2N / 3D',
+    region: 'Kerala',
+    tag: 'Wildlife',
+    image: 'https://images.unsplash.com/photo-1591805741030-7a8b3c8c8b4a?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Ramakkalmedu Hills & Kuravan Kurathi Statue',
+      'Aamappara Jeep Safari',
+      'Periyar Tiger Reserve & Elephant Safari',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 12600 },
+      { label: 'Deluxe', sublabel: null, total: 19500 },
+      { label: 'Premium', sublabel: null, total: 30000 },
+    ],
+  },
+  {
+    id: 'wonderful-wayanad',
+    name: 'Wonderful Wayanad',
+    duration: '2N / 3D',
+    region: 'Kerala',
+    tag: 'Nature',
+    image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Edakkal Caves & Pookode Lake',
+      'Banasura Sagar Dam & 900 Kandi Glass Bridge',
+      'Soochipara Waterfalls trek',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 13500 },
+      { label: 'Deluxe', sublabel: null, total: 19500 },
+      { label: 'Premium', sublabel: null, total: 33000 },
+    ],
+  },
+  {
+    id: 'ooty-kodaikanal',
+    name: 'Nilgiri Marvel — Ooty & Kodaikanal',
+    duration: '4N / 5D',
+    region: 'Tamil Nadu',
+    tag: 'Hill Station',
+    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Ooty Botanical Garden, Doddabetta Peak & Lake',
+      "Kodaikanal Lake, Coaker's Walk & Pillar Rocks",
+      'Scenic pine forests & Nilgiri mountain air',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 24000 },
+      { label: 'Deluxe', sublabel: null, total: 37500 },
+      { label: 'Premium', sublabel: null, total: 62500 },
+    ],
+  },
+  {
+    id: 'velankanni-pilgrimage',
+    name: 'Velankanni Pilgrimage Tour',
+    duration: '2N / 3D',
+    region: 'Tamil Nadu',
+    tag: 'Pilgrimage',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Basilica of Our Lady of Good Health',
+      'Velankanni Beach & Morning Star Church',
+      'Sacred shrine & coastal serenity',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 11400 },
+      { label: 'Deluxe', sublabel: null, total: 16500 },
+      { label: 'Premium', sublabel: null, total: 25500 },
+    ],
+  },
+  {
+    id: 'delhi-agra',
+    name: 'Delhi & Agra Heritage Tour',
+    duration: '3N / 4D',
+    region: 'North India',
+    tag: 'Heritage',
+    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'India Gate, Red Fort & Qutub Minar',
+      'Taj Mahal & Agra Fort',
+      'Lotus Temple, Raj Ghat & Akshardham',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 18000 },
+      { label: 'Deluxe', sublabel: null, total: 26000 },
+      { label: 'Premium', sublabel: null, total: 42000 },
+    ],
+  },
+  {
+    id: 'hyderabad-ramoji',
+    name: 'Hyderabad & Ramoji Film City',
+    duration: '2N / 3D',
+    region: 'Telangana',
+    tag: 'City Tour',
+    image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Ramoji Film City & Hussain Sagar Lake',
+      'Charminar & Golconda Fort',
+      'Salar Jung Museum & Lumbini Park',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 12000 },
+      { label: 'Deluxe', sublabel: null, total: 18000 },
+      { label: 'Premium', sublabel: null, total: 28500 },
+    ],
+  },
+  {
+    id: 'kumarakom-backwater',
+    name: 'Kumarakom Backwater Retreat',
+    duration: '1N / 2D',
+    region: 'Kerala',
+    tag: 'Backwaters',
+    image: 'https://images.unsplash.com/photo-1609766857041-ed402ea8069a?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Houseboat cruise on Vembanad Lake',
+      'Kumarakom Bird Sanctuary visit',
+      'Premium backwater resort stay',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 9000 },
+      { label: 'Deluxe', sublabel: null, total: 14000 },
+      { label: 'Premium', sublabel: null, total: 22000 },
+    ],
+  },
+  {
+    id: 'varkala-beach',
+    name: 'Varkala Cliff & Beach Vibes',
+    duration: '1N / 2D',
+    region: 'Kerala',
+    tag: 'Beach',
+    image: 'https://images.unsplash.com/photo-1621622471896-83b3a3f1a0a1?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Varkala Cliff & Papanasam Beach',
+      'Janardanaswamy Temple',
+      'Kappil Beach & serene backwater lake',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 12000 },
+      { label: 'Deluxe', sublabel: null, total: 19500 },
+      { label: 'Premium', sublabel: null, total: 31500 },
+    ],
+  },
+  {
+    id: 'kovalam-trivandrum',
+    name: 'Kovalam Beach & Trivandrum Heritage',
+    duration: '2N / 3D',
+    region: 'Kerala',
+    tag: 'Beach',
+    image: 'https://images.unsplash.com/photo-1517824806704-9040b037703b?q=80&w=800&auto=format&fit=crop',
+    highlights: [
+      'Kovalam Lighthouse Beach & Hawa Beach',
+      'Sree Padmanabhaswamy Temple & Napier Museum',
+      'Poovar Island mangrove boat ride',
+    ],
+    pricing: [
+      { label: 'Standard', sublabel: null, total: 12600 },
+      { label: 'Deluxe', sublabel: null, total: 20400 },
+      { label: 'Premium', sublabel: null, total: 34500 },
+    ],
   },
 ];
 
 // ── Footer -----------------------------------------------------------------
 export const footer = {
   about:
-    'Luxora Holidays delivers luxury travel experiences and premium cab rentals across Kerala — from Cochin Airport transfers to curated tour packages.',
+    'Luxora Holidays delivers luxury travel experiences and premium cab rentals across India — from Cochin Airport transfers to curated tour packages nationwide.',
   quickLinks: navLinks,
   popularServices: [
     'Cochin Airport Taxi',
-    'Innova Rental Kerala',
-    'Kerala Tour Packages',
+    'Innova Car Rental',
+    'India Tour Packages',
     'Family Trips',
     'Corporate Travel',
   ],

@@ -3,6 +3,7 @@ import Fleet from '../components/sections/Fleet';
 import RentalPackages from '../components/sections/RentalPackages';
 import Services from '../components/sections/Services';
 import Destinations from '../components/sections/Destinations';
+import TourPackages from '../components/sections/TourPackages';
 import WhyChooseUs from '../components/sections/WhyChooseUs';
 import BookingProcess from '../components/sections/BookingProcess';
 import Testimonials from '../components/sections/Testimonials';
@@ -10,9 +11,6 @@ import CTA from '../components/sections/CTA';
 import Contact from '../components/sections/Contact';
 import FAQ from '../components/sections/FAQ';
 
-/**
- * Home — single-page composition of all sections in narrative order.
- */
 export default function Home() {
   return (
     <>
@@ -21,6 +19,7 @@ export default function Home() {
       <RentalPackages />
       <Services />
       <Destinations />
+      <TourPackages />
       <WhyChooseUs />
       <BookingProcess />
       <Testimonials />

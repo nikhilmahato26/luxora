@@ -25,7 +25,7 @@ export default function PackageCard({ destination, featured = false }) {
       <div className={`relative ${featured ? 'h-full min-h-[22rem]' : 'h-72'}`}>
         <img
           src={destination.image}
-          alt={`${destination.name}, Kerala — Luxora Holidays tour package`}
+          alt={`${destination.name} — Luxora Holidays tour package`}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-110"
         />

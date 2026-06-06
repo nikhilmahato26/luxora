@@ -17,7 +17,7 @@ const ROWS = [
 
 export default function RentalPackages() {
   return (
-    <section id="packages-rates" className="section bg-primary-900/[0.02]">
+    <section id="packages" className="section bg-primary-900/[0.02]">
       <div className="container-x">
         <SectionTitle
           eyebrow="Transparent Pricing"

@@ -17,10 +17,10 @@ export default function Destinations() {
 
       <div className="container-x relative">
         <SectionTitle
-          eyebrow=" Tour Packages"
+          eyebrow="Destinations"
           title="Where Will Luxora"
           highlight="Take You?"
-          subtitle="From misty hill stations to serene backwaters and golden beaches — explore God's Own Country with Luxora."
+          subtitle="From misty hill stations to serene backwaters and golden beaches — explore India's finest destinations with Luxora."
         />
 
         <motion.div
