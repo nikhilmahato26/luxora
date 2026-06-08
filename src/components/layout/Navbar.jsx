@@ -30,7 +30,7 @@ export default function Navbar() {
       >
         <div className="container-x flex items-center justify-between">
           <a href="#home" aria-label="Luxora Holidays home">
-            <Logo />
+            <Logo gold={!scrolled} />
           </a>
 
           {/* Desktop nav */}
@@ -39,7 +39,11 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="relative rounded-full px-4 py-2 text-sm font-semibold text-primary-900/75 transition-colors hover:text-primary-700"
+                className={`relative rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
+                  scrolled
+                    ? 'text-primary-900/75 hover:text-primary-700'
+                    : 'text-gold hover:text-gold-light'
+                }`}
               >
                 {link.label}
               </a>

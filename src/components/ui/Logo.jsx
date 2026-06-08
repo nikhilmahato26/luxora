@@ -11,8 +11,8 @@
  * The `light` prop renders a white version for use over dark backgrounds.
  * ---------------------------------------------------------------------------
  */
-export default function Logo({ light = false, className = '' }) {
-  const wordColor = light ? '#FFFFFF' : '#14532D';
+export default function Logo({ light = false, gold = false, className = '' }) {
+  const wordColor = light ? '#FFFFFF' : gold ? '#D4AF37' : '#14532D';
   const subColor = light ? 'rgba(255,255,255,0.7)' : '#5B6B62';
 
   return (
